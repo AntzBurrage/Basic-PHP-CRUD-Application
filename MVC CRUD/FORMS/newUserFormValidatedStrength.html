@@ -1,0 +1,29 @@
+<form class="register" method="post" autocomplete="off" action="controller_register.php">
+<div>
+<h2>Register Form</h2>
+
+<tr><td>
+<label>
+<span>User Name</span><input name="user_name" type="text" required="true"  title="User Name (6 or more  Characters)" pattern="[a-zA-Z0-9]{6,100}" data-tip="Enter Characters A-Z,a-z and/or numbers 0-9">
+<span>First Name</span><input name="first_name" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,45}">
+<span>Last Name</span><input name="last_name" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,45}">
+<span>Email</span><input name="email" type="email" required="true" title="Email (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí'@.]{1,45}">
+<span>Password</span><input name="Pass1" id="password" type="password" required="true" title="Password (6 or more  Characters)  Permitted are these characters: a-z,A-Z,0-9 and underscore,$,%,^,&,*" pattern="[A-Za-z-0-9_$%^&*]{5,100}">
+
+<span>Re-enter Password</span><input name="Pass2"  type="password" required="true" title="Password (6 or more  Characters)  Permitted are these characters: a-z,A-Z,0-9 and underscore,$,%,^,&,*" pattern="[A-Za-z-0-9_$%^&*]{5,100}">
+
+</label>
+</td></tr>
+
+<tr><td><span style="color:#E31717" >Password Strength Indicator-->: </span><span id="result"></span>
+</td></tr>
+
+<tr><td>
+<label>
+<span>Hit Enter to Register</span>
+<input name="btn_register" type="submit" id="sendButton" value="Enter">
+</label>
+</td></tr>
+
+</div>
+</form>
